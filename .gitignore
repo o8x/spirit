@@ -1,0 +1,7 @@
+build/bin
+node_modules
+frontend/dist
+frontend/node_modules
+Spirit-Installer.dmg
+frontend/wailsjs
+/.idea
