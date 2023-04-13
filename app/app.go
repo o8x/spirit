@@ -29,11 +29,11 @@ func (a *Application) Startup(ctx context.Context, menus *menu.Menu) {
 	runtime.MenuUpdateApplicationMenu(ctx)
 }
 
-func (a *Application) ResizeMainWindow(width, height int) {
+func (a *Application) ResizeMainWindow(width, height float64) {
 	if width > 1000 {
 		width = 1000
 	}
-	runtime.WindowSetSize(a.ctx, width, height)
+	runtime.WindowSetSize(a.ctx, int(width), int(height))
 }
 
 func (a *Application) DefaultSizeMainWindow() {

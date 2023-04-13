@@ -13,7 +13,7 @@ import (
 )
 
 func NewImageMenu(ctx context.Context) *menu.MenuItem {
-	w := New("Image")
+	w := New("Content")
 
 	w.Add("Clean", func(data *menu.CallbackData) {
 		runtime.EventsEmit(ctx, "clean_img")
